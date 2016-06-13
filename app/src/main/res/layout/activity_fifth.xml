@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
-        android:id="@+id/f_back2"
+        android:id="@+id/B_back"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -43,7 +43,7 @@
         android:id="@+id/listView1"
         tools:listitem="@android:layout/simple_list_item_multiple_choice"
         android:choiceMode="multipleChoiceModal"
-        android:layout_below="@+id/f_back2"
+        android:layout_below="@+id/B_back"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -56,8 +56,8 @@
         android:id="@+id/textView3"
         android:textSize="30dp"
         android:layout_above="@+id/listView1"
-        android:layout_toRightOf="@+id/f_back2"
-        android:layout_toEndOf="@+id/f_back2" />
+        android:layout_toRightOf="@+id/B_back"
+        android:layout_toEndOf="@+id/B_back" />
 
     <TextView
         android:layout_width="wrap_content"

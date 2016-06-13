@@ -53,6 +53,7 @@ public class MedicineAdapter extends ArrayAdapter<Medicine>{
         public CheckBox C1;
     }
 
+    /*
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = convertView;
@@ -77,4 +78,6 @@ public class MedicineAdapter extends ArrayAdapter<Medicine>{
         holder2.C1.setTag(m);
         return v;
     }
+
+    */
 }

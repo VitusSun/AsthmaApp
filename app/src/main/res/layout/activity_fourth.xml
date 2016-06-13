@@ -64,14 +64,14 @@
         android:layout_toEndOf="@+id/textView3" />
 
     <ListView
+        tools:listitem="@android:layout/simple_list_item_multiple_choice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"
+        android:id="@+id/listView_fourth"
         android:choiceMode="multipleChoiceModal"
         android:layout_below="@+id/button4"
         android:layout_alignRight="@+id/button5"
-        android:layout_alignEnd="@+id/button5"
-        tools:listitem="@layout/custom_layout" />
+        android:layout_alignEnd="@+id/button5" />
 
 
 </RelativeLayout>

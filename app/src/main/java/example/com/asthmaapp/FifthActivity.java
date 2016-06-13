@@ -6,22 +6,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.GridView;
 import android.widget.ListView;
 
-import java.util.List;
-
 public class FifthActivity extends AppCompatActivity {
-    Button B1;
+    Button B1,B2;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_fifth );
-        B1 =(Button)findViewById(R.id.f_back2);
+        B1 =(Button)findViewById(R.id.B_back);
+        B2 =(Button)findViewById(R.id.button6);
 
         B1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),FourthActivity.class);
+                startActivity(i);
+            }
+        });
+        B2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),Finalstep.class);
                 startActivity(i);
             }
         });

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FourthActivity extends AppCompatActivity {
-    Button B1,B3;
+    Button B1,B3,B5;
     CheckBox C1;
     ListView L1;
     //ArrayList<Medicine> adapter;
@@ -26,12 +26,19 @@ public class FourthActivity extends AppCompatActivity {
         setContentView( R.layout.activity_fourth );
         B1=(Button)findViewById(R.id.button4);
         B3 = (Button)findViewById(R.id.button6);
-        L1 = (ListView)findViewById(R.id.listView);
+        B5 = (Button)findViewById(R.id.button5);
 
         B1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),Main2.class);
+                startActivity(i);
+            }
+        });
+        B5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),FifthActivity.class);
                 startActivity(i);
             }
         });
@@ -72,6 +79,7 @@ public class FourthActivity extends AppCompatActivity {
    private void populateListView() {
         String[] medicine = {"Accolate","Advair Diskus", "Advair HFA","Aerospan HFA®","Alupent®","Alvesco®","Asmanex®"};
         ArrayAdapter adapter= new ArrayAdapter<String>(this,R.layout.custom_layout,R.id.text_custom,medicine);
+        ListView L1 = (ListView)findViewById(R.id.listView_fourth);
         L1.setAdapter(adapter);
     }
 
