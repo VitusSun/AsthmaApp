@@ -1,3 +1,3 @@
-# AsthmaApp
+# Asthma App
 
 Introduction
