@@ -2,8 +2,8 @@
 
 
 <p align="center">
-  <img src="https://github.com/yesuntianyi/AsthmaApp/blob/master/gradle/wrapper/0page.png" width="370"/>
-  <img src="https://github.com/yesuntianyi/AsthmaApp/blob/master/gradle/wrapper/1page.png" width="370"/>
+  <img src="https://github.com/yesuntianyi/AsthmaApp/blob/master/gradle/wrapper/0page.png" width="390"/>
+  <img src="https://github.com/yesuntianyi/AsthmaApp/blob/master/gradle/wrapper/1page.png" width="390"/>
 </p>
 
 <p align="center">
