@@ -66,6 +66,7 @@ public class SecondActivity extends AppCompatActivity {
                                         public void onClick(View v) {
 
                                             Cursor res=db.get_values(T1.getText().toString(),T2.getText().toString());
+
                                             if(res.getCount()==0)
                                             {
                                                 Toast.makeText( SecondActivity.this, "No Entry Found", Toast.LENGTH_LONG ).show();
@@ -73,10 +74,12 @@ public class SecondActivity extends AppCompatActivity {
                                             }
                                             else
                                             {
-                                                Intent i = new Intent( getApplicationContext(), Main2.class );
+                                                Bundle a = new Bundle();
+                                                Intent i = new Intent( getApplicationContext(),Main2.class );
+                                                a.putString("User Name",T1.getText().toString());
+                                                i.putExtras(a);
                                                 startActivity( i );
                                                 onPause();
-
                                             }
 
                                         }

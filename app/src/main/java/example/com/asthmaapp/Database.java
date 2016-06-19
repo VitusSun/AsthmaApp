@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by Asthma App on 18-May-16.
+ * Created by Thekiller on 18-May-16.
  */
 public class Database extends SQLiteOpenHelper {
     public static final String Database_Name="user.db";
@@ -51,5 +51,21 @@ public class Database extends SQLiteOpenHelper {
         Cursor res = db.rawQuery( "Select Name, Password from "+Table_Name+" WHERE Name = '"+name+"' AND Password = '"+Password+"';",null );
         return res;
 
+    }
+    public Integer deleteData(String name)
+    {
+        SQLiteDatabase db= this.getWritableDatabase();
+        return db.delete(Table_Name,"Name=?",new String[] {name});
+
+    }
+    public boolean updateData(String name,String pass, String rpass)
+    {
+        SQLiteDatabase db= this.getWritableDatabase();
+        ContentValues values = new ContentValues(  );
+        values.put(Col_1,name);
+        values.put(Col_3,pass);
+        values.put(Col_4,rpass);
+        db.update(Table_Name,values,"Name=?",new String[] {name});
+        return true;
     }
 }

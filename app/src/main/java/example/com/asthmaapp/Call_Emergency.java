@@ -15,11 +15,15 @@ Button B1;
         setContentView(R.layout.activity_call__emergency);
     B1= (Button) findViewById(R.id.emer_button);
 
+
         B1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Bundle b = getIntent().getExtras();
+                //String number = b.getString("Emergency Number");
                 Intent callIntent= new Intent();
-                callIntent.setData(Uri.parse("tel:123456789"));
+
+                callIntent.setData(Uri.parse("tel:911"));
                 startActivity(callIntent);
             }
         });
