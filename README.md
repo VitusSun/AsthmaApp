@@ -2,6 +2,6 @@
 
 
 <p align="center">
-  <img src="https://github.com/yesuntianyi/JoyShare/blob/master/JoyShare_screenshot/files.jpg" width="320"/>
-  <img src="https://github.com/yesuntianyi/JoyShare/blob/master/JoyShare_screenshot/share.jpg" width="320"/>
+  <img src="https://github.com/yesuntianyi/AsthmaApp/blob/master/gradle/wrapper/0page.png" width="350"/>
+  <img src="https://github.com/yesuntianyi/AsthmaApp/blob/master/gradle/wrapper/1page.png" width="350"/>
 </p>
